@@ -1,0 +1,80 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #474747;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-name {
+    margin-right: 20px;
+}
+
+#treble-tokens {
+    background-color: #ffffff;
+    color: #474747;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.shop-item {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.shop-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.shop-item button {
+    background-color: #474747;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.back-button {
+    background-color: #282828;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

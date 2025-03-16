@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treble | Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- profile.html -->
+
+<div class="container">
+
+  <div class="profile-pic"> 
+    <img src="assets/profile.png">
+  </div>
+
+  <div class="profile-info">
+    <div class="profile"><p>Profile</p></div>
+  
+    <div> <p class="username"><span id="username"></span></p> </div> 
+  </div>
+</div>
+
+<div class="topbar">
+<button class="logout"><i class='bx bx-log-out -circle'></i> Log Out</button> 
+<button class="back" onclick="window.location.href='http://localhost:3000';"><i class='bx bx-arrow-back' ></i> <span class="tooltip">Go back</span> </button>
+</div>
+
+<script>
+  const username = document.getElementById('username');
+
+  username.textContent = sessionStorage.name;
+</script>
+
+<script src="js/profile.js"></script>
+
+
+</body>
+</html>
+
