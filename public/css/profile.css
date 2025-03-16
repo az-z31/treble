@@ -1,0 +1,124 @@
+body{
+    background:black;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-family: 'roboto', sans-serif;
+    overflow: hidden;
+}
+
+.profile{
+    color:white;
+    text-transform: capitalize;
+    text-align: left;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.username{
+    color:white;
+    display: block; 
+    font-size: 75px;
+    font-weight: 900;
+    margin-top:10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top:100px;
+    left:100px;
+    position:relative
+}
+
+.container img{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.profile-info {
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    top:55px;
+}
+
+.logout{
+    position: absolute;
+    top:22px;
+    right:100px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1d1d1d;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #464748;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.back{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    border: 1px solid #464748;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    color:white;
+    top: 22px;
+    left:100px;
+    transition: .5s;
+}
+
+.logout:hover{
+    background: #fff;
+    color: #000;
+}
+
+.back:hover{
+    background: #fff;
+    color: #000;
+}
+
+
+.back .tooltip {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Position the tooltip above the button */
+    left: 50%;
+    margin-left: -40px; /* Centers the tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .back .tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Arrow at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  /* Show the tooltip on hover */
+  .back:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
