@@ -26,8 +26,8 @@ Treble is a music application that allows users to create playlists, listen to m
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/treble-music-app.git
-   cd treble-music-app
+   git clone https://github.com/az-z31/treble.git
+   cd treble
    ```
 
 2. Install dependencies:
